@@ -9,7 +9,6 @@ import { SearchProvider } from './context/SearchContext';
 import { ToastProvider } from './context/ToastContext';
 
 // Common Components
-import { AnnouncementBar } from './components/common/AnnouncementBar';
 import { Navbar } from './components/common/Navbar';
 import { Footer } from './components/common/Footer';
 import { CartDrawer } from './components/common/CartDrawer';
@@ -80,7 +79,6 @@ export const App: React.FC = () => {
               <ScrollToTop />
               <LoadingScreen />
               <CustomCursor />
-              <AnnouncementBar />
               <Navbar />
               <SearchModal />
               <CartDrawer />
