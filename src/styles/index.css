@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #F7F5F0;
+    --color-bg-secondary: #EDEAE3;
+    --color-text: #191919;
+    --color-text-secondary: #77746E;
+    --color-accent: #A18A6B;
+    --color-border: #DEDAD1;
+    --color-dark: #171715;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #F7F5F0;
+    color: #191919;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F7F5F0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #DEDAD1;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A18A6B;
+  }
+}
+
+/* Custom luxury typography utilities */
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+.tracking-luxury {
+  letter-spacing: 0.2em;
+}
+
+.tracking-editorial {
+  letter-spacing: 0.05em;
+}
+
+/* Luxury image hover zoom styling */
+.img-editorial {
+  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), filter 0.8s ease;
+}
+
+.img-editorial:hover {
+  transform: scale(1.04);
+}
+
+/* Subtle grain overlay for dark sections */
+.bg-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
